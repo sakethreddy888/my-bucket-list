@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Bucket List</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        /* Main Section */
+        main {
+            padding: 2rem;
+        }
+
+        .bucket-list h2 {
+            text-align: center;
+            color: #444;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        /* List Styling */
+        ul {
+            list-style: none; /* Remove default bullet points */
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        ul li {
+            background: white;
+            margin: 0.75rem 0;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        ul li:hover {
+            transform: translateY(-5px);
+            background-color: #e7f3ff;
+        }
+
+        ul li .icon {
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            color: #28a745; /* Green for completed tasks */
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #0078d7;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 1rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            ul li {
+                font-size: 1rem;
+                padding: 0.75rem;
+            }
+
+            .bucket-list h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        My Personal Bucket List
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="bucket-list">
+            <h2>Things to Accomplish</h2>
+            <ul>
+                <li><span class="icon">✔</span> Visit the Eiffel Tower</li>
+                <li><span class="icon">⭐</span> Learn scuba diving</li>
+                <li><span class="icon">✔</span> Write a novel</li>
+                <li><span class="icon">⭐</span> Start a YouTube channel</li>
+                <li><span class="icon">✔</span> Master a new language</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        &copy; 2025 My Personal Bucket List
+    </footer>
+</body>
+</html>
